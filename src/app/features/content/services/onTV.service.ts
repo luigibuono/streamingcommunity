@@ -16,8 +16,8 @@ export class OnTVService {
   constructor(private http: HttpClient) {
     this.baseUrl = 'https://api.themoviedb.org/3/';
     this.apiKey = environment.theMovieDBApi;
-    this.language = 'en-US';
-    this.region = 'US'
+    this.language = 'en-IT';
+    this.region = 'IT'
   }
 
   getTVShows(type: string, page: number): Observable<any> {
